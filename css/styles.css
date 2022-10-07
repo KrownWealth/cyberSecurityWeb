@@ -1,5 +1,6 @@
 
 body{
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
     text-align: center;
 }
 #title{
@@ -11,23 +12,20 @@ h2{
     font-size: 1.5rem;
     font-weight: bold;
 }
+p{
+    color: #4c4c4c;
+}
 
 /*Nav*/
 
 
-nav{
- 
-padding: 15% 5% 5% 10%;
-background-color: #fff;
-  
-}
-
-
+nav{background-color: #fff;}
 .navbar-brand{
     font-size: 2.5rem;
-    font-family: ;
     font-weight: bold;
     color: #06283D;
+    padding-left: 1%;
+    
 }
 
 .navbar-brand:hover{
@@ -36,12 +34,11 @@ color: #06283D;
 }
 
 .nav-item{
-    padding: 0 18px;
+    padding: 0 10px;
     
 }
 
 .nav-link{
-    font-family: ;
     font-size: 1rem;
     font-weight: 500;
     color: #06283D;
@@ -106,6 +103,11 @@ color: #06283D;
     padding: 0;
 }
 
+
+.hero-text h3{
+    font-size: 1.5rem;
+}
+
 .fade-carousel .carousel-inner .carousel-item.active .hero-text {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
@@ -134,6 +136,7 @@ color: #06283D;
 .carousel-btn {
     padding: 10px 40px;
     background-color: #47B5FF;
+    color: #fff;
 }
 
 .btn.btn-hero:hover,
@@ -146,6 +149,49 @@ color: #06283D;
     margin: 20px auto;
 }
 
+/*Cta btn*/
+
+.cta-btn{
+    background-color: #fff;
+    color: #06283D;
+}
+
+.cta-btn:hover{
+    background-color: #06283D;
+    color: #fff;
+}
+
+/*Manage It services btn */
+
+.manage-btn{
+    background-color: #06283D;
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.cta-btn:hover{
+    background-color: #06283D;
+    color: #fff;
+}
+
+.manage-btn{
+    background-color: #06283D;
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.manage-btn:hover {
+        background-color: #47B5FF;
+        color: #fff;
+     
+    
+}
 .see-more{
     border-radius: 50px;
     border: 1px solid #06283D;
@@ -167,7 +213,7 @@ color: #06283D;
     height: 100%;
     z-index: 2;
     background-color: #080d15;
-    opacity: .7;
+    opacity: .2;
 }
 
 /********************************/
@@ -177,21 +223,23 @@ color: #06283D;
 /*Homepage slides bg*/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+video.fullscreen {
   height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+  
 
 .fade-carousel .slides .slide-1 {
-  background-image: url(../images/image1.jpg);
+  background-image: url(../images/image4.jpeg);
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(../images/image2.jpg);
+ background-image: url(../images/image2.jpg);
 }
 .fade-carousel .slides .slide-3 {
- background-image: url(../images/image3.jpg);
+ background-image: url(../images/image1.jpg);
 }
 
 /*Manage It carousel*/
@@ -254,19 +302,17 @@ padding: 15% 7%;
 #cta{
     background-color:#47B5FF;
     color: #fff;
-    padding: 60px;
+   text-align: left;
+   padding: 5% 0 5% 30%;
 }
 
-.cta-section label {
-    padding-right: 350px;
+.cta-section h2{
+    padding-bottom: 3%;
 }
-
-
-
 .form-group input,
 .form-group textarea{ 
-    width: 40%;
-    margin: auto;
+    width: 60%;
+   
 }
 
 /*About Us*/
@@ -313,22 +359,39 @@ padding-bottom: 3%;
 /*Manage IT services*/
 
 
+.solution h3{
+    padding-bottom: 20px;
+}
+
+.advantages{
+    background-color: #47B5FF;
+    padding: 3% 10% 7%;
+}
+
+.advantages-card{
+    text-align: center;
+}
+
 
 
 .it-testimonials{
-    background-color:   #fff;
+    background-color:   #ecf3f8;
     text-align: center;
-   padding: 5% 0;
+    padding: 10% 0;
   
 }
-.testimonials-carousel .carousel-inner .carousel-item{
-    padding: 20% 10%;
+
+.it-testimonials h2{
+    padding-bottom: 5%;
 }
+
+.testimonials-carousel .carousel-inner .carousel-item{
+    padding: 10% 10%;
+}
+
 .types{
     padding-bottom: 10%;
 }
-
-
 
 .testimonial-image{
     width: 10%;
@@ -344,7 +407,7 @@ padding-bottom: 3%;
     color: #fff;
     padding: 60px;
 }
-
-.brands a{
+#footer p,
+.brands a {
     color: #fff;
 }
