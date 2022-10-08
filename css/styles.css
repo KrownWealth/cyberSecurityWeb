@@ -32,6 +32,15 @@ nav{background-color: #fff;}
 cursor: pointer;
 color: #06283D;
 }
+/*Nav toggler*/
+.navbar-toggler .menu-icon{
+    width: 100%;
+    float: left;
+    height: 34px;
+    color: #06283D;
+    font-size: 2rem;
+   
+}
 
 .nav-item{
     padding: 0 10px;
@@ -97,7 +106,7 @@ color: #06283D;
 
 
 .hero-text h1 {
-    font-size: 6em;    
+    font-size: 6rem;    
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -276,26 +285,18 @@ padding: 15% 7%;
 .card{
   background-color: #fff;
     border-radius: 10px;
- 
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
     
 }
 
-.card-title h2{
-    padding-bottom: .5rem;
-}
+.card-title h2{padding-bottom: .5rem;}
 
 /*please note a transition in form of ease-out animation to be added to the icons on hover*/
 
-.card :hover{
-    transition: all 0.5s ease-out;
-}
+.card :hover{transition: all 0.5s ease-out;}
 
-
-.service-column{
-    padding: 2% 2%;
-}
+.service-column{padding: 2% 2%;}
 
 /*Contact section*/
 
@@ -410,4 +411,33 @@ padding-bottom: 3%;
 #footer p,
 .brands a {
     color: #fff;
+}
+
+@media screen and (max-width:375px){
+.navbar-brand{font-size: 1.5rem;}
+    
+.hero-text h1 {font-size: 3rem;}
+
+
+.hero-text h3{font-size: 1rem;}
+
+#cta{
+    background-color:#47B5FF;
+    text-align: left;
+   padding: 5% 0 5%;
+  
+}
+
+.form-group input,
+.form-group textarea{ 
+    width: 100%;
+   
+} 
+#footer{
+    padding: 3% 5% 7%;
+}
+#footer p,
+.brands a{
+    display: inline-block;
+}
 }
